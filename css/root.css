@@ -1,0 +1,47 @@
+:root {
+	/* Fonts */
+	--font-heading: 'Cormorant Garamond', 'Georgia', serif;
+	--font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+	/* Colors */
+	--color-bg: #FAF7F4;
+	--color-bg-alt: #F0EBE3;
+	--color-dark: #1B3A2D;
+	--color-dark-mid: #2D5A45;
+	--color-white: #FFFFFF;
+	--color-cream: #F5F0EB;
+	--color-gold: #B5A88A;
+	--color-text: #1B3A2D;
+	--color-text-muted: rgba(27, 58, 45, 0.55);
+	--color-border: rgba(27, 58, 45, 0.12);
+	--color-border-light: rgba(27, 58, 45, 0.08);
+
+	/* Typography */
+	--text-xs: clamp(0.6875rem, 0.75vw, 0.8125rem);
+	--text-sm: clamp(0.8125rem, 0.9vw, 0.9375rem);
+	--text-base: clamp(0.9375rem, 1vw, 1.0625rem);
+	--text-lg: clamp(1.0625rem, 1.15vw, 1.1875rem);
+	--text-xl: clamp(1.25rem, 1.5vw, 1.5rem);
+	--h3: clamp(1.25rem, 1.5vw, 1.5rem);
+	--h2: clamp(2rem, 3.5vw, 3.75rem);
+	--h1: clamp(2.25rem, 4.5vw, 4.5rem);
+
+	/* Layout */
+	--section-py: clamp(80px, 10vw, 160px);
+	--container-max: 1400px;
+	--container-px: clamp(24px, 4vw, 60px);
+
+	/* Header */
+	--header-h: 80px;
+
+	/* Transitions */
+	--ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+	--duration: 0.4s;
+	--duration-slow: 0.8s;
+}
+
+@media (max-width: 768px) {
+	:root {
+		--header-h: 64px;
+	}
+}
