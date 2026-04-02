@@ -4,12 +4,12 @@
 	--font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 
 	/* Colors */
-	--color-bg: #FAF7F4;
-	--color-bg-alt: #F0EBE3;
+	--color-bg: #FAFAF9;
+	--color-bg-alt: #F2F1EE;
 	--color-dark: #1B3A2D;
 	--color-dark-mid: #2D5A45;
 	--color-white: #FFFFFF;
-	--color-cream: #F5F0EB;
+	--color-cream: #F5F4F1;
 	--color-gold: #B5A88A;
 	--color-text: #1B3A2D;
 	--color-text-muted: rgba(27, 58, 45, 0.55);
