@@ -37,6 +37,9 @@ const translations = {
 		'footer.adv5': 'П\'ятизірковий сервіс 24/7',
 		'footer.presentation': 'Завантажити презентацію ↗',
 		'footer.map': 'Буковель — мітка на карті ↗',
+		'modal.title': 'Оберіть презентацію',
+		'modal.restaurant': 'Ресторан',
+		'modal.chalet': 'Шале',
 	},
 	en: {
 		'nav.concept': 'Concept',
@@ -72,6 +75,9 @@ const translations = {
 		'footer.adv5': 'Five-star service 24/7',
 		'footer.presentation': 'Download presentation ↗',
 		'footer.map': 'Bukovel — pin on map ↗',
+		'modal.title': 'Choose a presentation',
+		'modal.restaurant': 'Restaurant',
+		'modal.chalet': 'Chalet',
 	}
 };
 
@@ -90,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	initScrollReveal();
 	initSmoothScroll();
 	initHeroParallax();
+	initPresentationModal();
 });
 
 /* =============================================
@@ -295,6 +302,53 @@ function initSmoothScroll() {
 
 			window.scrollTo({ top, behavior: 'smooth' });
 		});
+	});
+}
+
+/* =============================================
+   HERO PARALLAX
+   ============================================= */
+
+/* =============================================
+   PRESENTATION MODAL
+   ============================================= */
+
+function initPresentationModal() {
+	const btn = document.getElementById('openPresentation');
+	const btnMobile = document.getElementById('openPresentationMobile');
+	const modal = document.getElementById('presentationModal');
+	if (!modal) return;
+
+	const closeBtn = modal.querySelector('.modal__close');
+	const backdrop = modal.querySelector('.modal__backdrop');
+	const mobileMenu = document.getElementById('mobileMenu');
+	const burger = document.getElementById('burger');
+
+	function closeMobileMenu() {
+		if (!mobileMenu) return;
+		mobileMenu.classList.remove('active');
+		if (burger) burger.classList.remove('active');
+	}
+
+	function open() {
+		closeMobileMenu();
+		modal.classList.add('active');
+		document.documentElement.classList.add('no-scroll');
+		document.body.classList.add('no-scroll');
+	}
+
+	function close() {
+		modal.classList.remove('active');
+		document.documentElement.classList.remove('no-scroll');
+		document.body.classList.remove('no-scroll');
+	}
+
+	if (btn) btn.addEventListener('click', open);
+	if (btnMobile) btnMobile.addEventListener('click', open);
+	closeBtn.addEventListener('click', close);
+	backdrop.addEventListener('click', close);
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape' && modal.classList.contains('active')) close();
 	});
 }
 
