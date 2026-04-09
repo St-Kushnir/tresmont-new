@@ -6,11 +6,12 @@ const translations = {
 	ua: {
 		'nav.concept': 'Концепція',
 		'nav.gallery': 'Галерея',
+		'nav.ecosystem': 'Партнерство',
 		'nav.investment': 'Інвестиції',
 		'hero.tagline': 'Private Alpine Style Residence',
 		'about.label': 'Концепція',
 		'about.title': 'Приватна alpine-style residence для тих, хто обирає тишу',
-		'about.text1': 'TRESMONT — приватна alpine-style residence для тих, хто обирає тишу як привілей. 16 резиденцій-шале з цільного зрубу, натхнених атмосферою Куршевеля, Церматта та Шамоні.',
+		'about.text1': 'TRESMONT — приватна alpine-style residence для тих, хто обирає тишу як привілей. 16 резиденцій-шале з цільного зрубу. Європейська alpine-архітектура, адаптована до ландшафту Карпат.',
 		'about.text2': 'Це простір, де архітектура, природа та спосіб життя поєднуються в єдину стриману естетику. Створено для обраного кола власників, які цінують бездоганну якість та тишу.',
 		'stat.chalets': 'резиденцій',
 		'stat.area': 'площа кожного',
@@ -18,6 +19,14 @@ const translations = {
 		'stat.altitude': 'над рівнем моря',
 		'gallery.label': 'Галерея',
 		'gallery.title': 'Вишуканість у кожній деталі',
+		'eco.label': 'Партнерство',
+		'eco.title': 'Private Lifestyle Ecosystem',
+		'eco.text': 'TRESMONT формується не лише як резиденційний проєкт, а як приватне середовище нового рівня. Клубна інфраструктура передбачає простір для життя, відпочинку, сервісу та статусних партнерств.',
+		'eco.f1': 'Закритий клуб для резидентів',
+		'eco.f2': 'Кінний клуб',
+		'eco.f3': 'Вертолітний майданчик',
+		'eco.f4': 'Авторський ресторан',
+		'eco.f5': 'SPA & wellness-зона',
 		'footer.label': 'Інвестиції',
 		'footer.title': 'Надійна інвестиція у часи невизначеності',
 		'footer.subtitle': 'Вартість та умови — за індивідуальним запитом',
@@ -32,11 +41,12 @@ const translations = {
 	en: {
 		'nav.concept': 'Concept',
 		'nav.gallery': 'Gallery',
+		'nav.ecosystem': 'Partnership',
 		'nav.investment': 'Investment',
 		'hero.tagline': 'Private Alpine Style Residence',
 		'about.label': 'Concept',
 		'about.title': 'A private alpine-style residence for those who choose silence',
-		'about.text1': 'TRESMONT is a private alpine-style residence for those who choose silence as a privilege. 16 chalet residences crafted from solid timber, inspired by Courchevel, Zermatt, and Chamonix.',
+		'about.text1': 'TRESMONT is a private alpine-style residence for those who choose silence as a privilege. 16 chalet residences crafted from solid timber. European alpine architecture, adapted to the Carpathian landscape.',
 		'about.text2': 'A space where architecture, nature, and lifestyle converge into one refined aesthetic. Created for a select circle of owners who value impeccable quality and quiet mountain living.',
 		'stat.chalets': 'residences',
 		'stat.area': 'area each',
@@ -44,6 +54,14 @@ const translations = {
 		'stat.altitude': 'above sea level',
 		'gallery.label': 'Gallery',
 		'gallery.title': 'Elegance in Every Detail',
+		'eco.label': 'Partnership',
+		'eco.title': 'Private Lifestyle Ecosystem',
+		'eco.text': 'TRESMONT is more than a residential project — it is a private environment of a new caliber. Club infrastructure provides space for living, leisure, service, and distinguished partnerships.',
+		'eco.f1': 'Private residents\' club',
+		'eco.f2': 'Equestrian club',
+		'eco.f3': 'Helicopter access',
+		'eco.f4': 'Signature restaurant',
+		'eco.f5': 'SPA & wellness zone',
 		'footer.label': 'Investment',
 		'footer.title': 'A Reliable Investment in Times of Uncertainty',
 		'footer.subtitle': 'Pricing and terms — upon individual request',
@@ -135,16 +153,21 @@ function initMobileMenu() {
 	const menu = document.getElementById('mobileMenu');
 	const links = menu.querySelectorAll('a');
 
+	function setScrollLock(isLocked) {
+		document.documentElement.classList.toggle('no-scroll', isLocked);
+		document.body.classList.toggle('no-scroll', isLocked);
+	}
+
 	function toggle() {
 		const isOpen = menu.classList.toggle('active');
 		burger.classList.toggle('active', isOpen);
-		document.body.style.overflow = isOpen ? 'hidden' : '';
+		setScrollLock(isOpen);
 	}
 
 	function close() {
 		menu.classList.remove('active');
 		burger.classList.remove('active');
-		document.body.style.overflow = '';
+		setScrollLock(false);
 	}
 
 	burger.addEventListener('click', toggle);
