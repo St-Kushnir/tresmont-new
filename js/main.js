@@ -4,24 +4,52 @@
 
 const translations = {
 	ua: {
-		'nav.concept': 'Концепція',
+		'nav.concept': 'Про проєкт',
 		'nav.gallery': 'Галерея',
-		'nav.ecosystem': 'Партнерство',
+		'nav.ecosystem': 'Інфраструктура',
 		'nav.investment': 'Інвестиції',
-		'hero.tagline': 'Private Alpine Style Residence',
-		'about.label': 'Концепція',
-		'about.title': 'Приватна alpine-style residence для тих, хто обирає тишу',
-		'about.text1': 'TRESMONT — приватна alpine-style residence для тих, хто обирає тишу як привілей. 16 резиденцій-шале з цільного зрубу. Європейська alpine-архітектура, адаптована до ландшафту Карпат.',
-		'about.text2': 'Це простір, де архітектура, природа та спосіб життя поєднуються в єдину стриману естетику. Створено для обраного кола власників, які цінують бездоганну якість та тишу.',
-		'stat.chalets': 'резиденцій',
+		'hero.tagline': 'Приватні шале в Карпатах з обмеженою кількістю резиденцій',
+		'cta.contact': 'Зв\'язатись з нами',
+		'cta.presentation': 'Отримати презентацію',
+		'cta.pricing': 'Дізнатись вартість',
+		'about.label': 'Про проєкт',
+		'about.title': 'Клубний формат заміської нерухомості в Карпатах',
+		'about.text1': 'TRESMONT — 16 окремих шале з цільного зрубу на приватній території поруч із Буковелем. Обмежена кількість резиденцій для повної ізоляції та максимального комфорту кожного власника.',
+		'about.text2': 'Продумані планування, панорамні вікна, тераси з видом на гори та власні земельні ділянки 6–7 соток. Кожне шале — повністю завершена резиденція з інтер\'єром від Belenko Design Studio.',
+		'stat.chalets': 'окремих шале',
 		'stat.area': 'площа кожного',
 		'stat.unit.m': 'м',
 		'stat.altitude': 'над рівнем моря',
+		'location.title': 'Локація',
+		'location.subtitle': 'Карпати, поруч із Буковелем',
+		'location.f1': 'Швидкий доступ до курорту',
+		'location.f2': 'Віддаленість від шуму та натовпу',
+		'location.f3': 'Природне оточення та панорамні краєвиди',
+		'audience.label': 'Для кого',
+		'audience.title': 'Для тих, хто обирає якість життя',
+		'audience.f1.title': 'Власний будинок у Карпатах',
+		'audience.f1.text': 'Повноцінна резиденція з земельною ділянкою та правом власності, а не готельний номер',
+		'audience.f2.title': 'Простір без натовпу',
+		'audience.f2.text': 'Лише 16 резиденцій на приватній території — повна ізоляція від масового туризму',
+		'audience.f3.title': 'Інвестиція з потенціалом',
+		'audience.f3.text': 'Нерухомість у Карпатах із високою дохідністю та зростанням вартості',
 		'gallery.label': 'Галерея',
 		'gallery.title': 'Вишуканість у кожній деталі',
-		'eco.label': 'Партнерство',
-		'eco.title': 'Private Lifestyle Ecosystem',
-		'eco.text': 'TRESMONT формується не лише як резиденційний проєкт, а як приватне середовище нового рівня. Клубна інфраструктура передбачає простір для життя, відпочинку, сервісу та статусних партнерств.',
+		'gallery.tab.all': 'Усі',
+		'gallery.tab.exterior': 'Екстер\'єр',
+		'gallery.tab.interior': 'Інтер\'єр',
+		'gallery.tab.terrace': 'Тераса',
+		'gallery.tab.restaurant': 'Ресторан',
+		'dev.label': 'Забудовник',
+		'dev.title': 'Хто реалізує проєкт',
+		'dev.text': 'TRESMONT реалізується командою з багаторічним досвідом у будівництві та девелопменті в Карпатському регіоні. Кожен проєкт поєднує інженерну точність, якість матеріалів та глибоке розуміння місцевого ландшафту.',
+		'dev.f1': 'Досвід у будівництві преміальної нерухомості',
+		'dev.f2': 'Реалізовані об\'єкти в регіоні',
+		'dev.f3': 'Експертиза в роботі з цільним зрубом та альпійською архітектурою',
+		'dev.f4': 'Партнерство з Belenko Design Studio та Holzbau Rustikal',
+		'eco.label': 'Інфраструктура',
+		'eco.title': 'Клубна екосистема',
+		'eco.text': 'TRESMONT — не просто житло, а приватне середовище з повним набором сервісів. Клубна інфраструктура для життя, відпочинку та бізнес-зустрічей.',
 		'eco.f1': 'Закритий клуб для резидентів',
 		'eco.f2': 'Кінний клуб',
 		'eco.f3': 'Вертолітний майданчик',
@@ -42,24 +70,52 @@ const translations = {
 		'modal.chalet': 'Шале',
 	},
 	en: {
-		'nav.concept': 'Concept',
+		'nav.concept': 'About',
 		'nav.gallery': 'Gallery',
-		'nav.ecosystem': 'Partnership',
+		'nav.ecosystem': 'Infrastructure',
 		'nav.investment': 'Investment',
-		'hero.tagline': 'Private Alpine Style Residence',
-		'about.label': 'Concept',
-		'about.title': 'A private alpine-style residence for those who choose silence',
-		'about.text1': 'TRESMONT is a private alpine-style residence for those who choose silence as a privilege. 16 chalet residences crafted from solid timber. European alpine architecture, adapted to the Carpathian landscape.',
-		'about.text2': 'A space where architecture, nature, and lifestyle converge into one refined aesthetic. Created for a select circle of owners who value impeccable quality and quiet mountain living.',
-		'stat.chalets': 'residences',
+		'hero.tagline': 'Private chalets in the Carpathians with a limited number of residences',
+		'cta.contact': 'Contact us',
+		'cta.presentation': 'Get presentation',
+		'cta.pricing': 'Request pricing',
+		'about.label': 'About the project',
+		'about.title': 'A club-format countryside estate in the Carpathians',
+		'about.text1': 'TRESMONT — 16 individual chalets crafted from solid timber on a private territory near Bukovel. A limited number of residences for complete privacy and maximum comfort for each owner.',
+		'about.text2': 'Thoughtful floor plans, panoramic windows, terraces overlooking the mountains, and private land plots of 6–7 hundred m². Each chalet is a fully finished residence with interiors by Belenko Design Studio.',
+		'stat.chalets': 'individual chalets',
 		'stat.area': 'area each',
 		'stat.unit.m': 'm',
 		'stat.altitude': 'above sea level',
+		'location.title': 'Location',
+		'location.subtitle': 'Carpathians, near Bukovel',
+		'location.f1': 'Quick access to the resort',
+		'location.f2': 'Away from noise and crowds',
+		'location.f3': 'Natural surroundings and panoramic views',
+		'audience.label': 'For whom',
+		'audience.title': 'For those who choose quality of life',
+		'audience.f1.title': 'A home in the Carpathians',
+		'audience.f1.text': 'A full-fledged residence with a land plot and ownership rights — not a hotel room',
+		'audience.f2.title': 'Space without crowds',
+		'audience.f2.text': 'Only 16 residences on private territory — complete isolation from mass tourism',
+		'audience.f3.title': 'An investment with potential',
+		'audience.f3.text': 'Carpathian real estate with high yields and rising value',
 		'gallery.label': 'Gallery',
 		'gallery.title': 'Elegance in Every Detail',
-		'eco.label': 'Partnership',
-		'eco.title': 'Private Lifestyle Ecosystem',
-		'eco.text': 'TRESMONT is more than a residential project — it is a private environment of a new caliber. Club infrastructure provides space for living, leisure, service, and distinguished partnerships.',
+		'gallery.tab.all': 'All',
+		'gallery.tab.exterior': 'Exterior',
+		'gallery.tab.interior': 'Interior',
+		'gallery.tab.terrace': 'Terrace',
+		'gallery.tab.restaurant': 'Restaurant',
+		'dev.label': 'Developer',
+		'dev.title': 'Who is behind the project',
+		'dev.text': 'TRESMONT is developed by a team with years of experience in construction and development in the Carpathian region. Every project combines engineering precision, material quality, and a deep understanding of the local landscape.',
+		'dev.f1': 'Experience in premium real estate construction',
+		'dev.f2': 'Completed projects in the region',
+		'dev.f3': 'Expertise in solid timber and alpine architecture',
+		'dev.f4': 'Partnership with Belenko Design Studio and Holzbau Rustikal',
+		'eco.label': 'Infrastructure',
+		'eco.title': 'Club Ecosystem',
+		'eco.text': 'TRESMONT is more than housing — it is a private environment with a full range of services. Club infrastructure for living, leisure, and business meetings.',
 		'eco.f1': 'Private residents\' club',
 		'eco.f2': 'Equestrian club',
 		'eco.f3': 'Helicopter access',
@@ -93,10 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	initMobileMenu();
 	initLangToggle();
 	initGallery();
+	initGalleryTabs();
 	initScrollReveal();
 	initSmoothScroll();
 	initHeroParallax();
 	initPresentationModal();
+	initPhoneButtons();
 });
 
 /* =============================================
@@ -215,10 +273,36 @@ function applyLanguage(lang) {
    GALLERY SLIDER
    ============================================= */
 
-function initGallery() {
-	if (typeof Swiper === 'undefined') return;
+let gallerySwiper = null;
+let galleryAllSlides = [];
 
-	new Swiper('.gallery-slider', {
+function initGallery(filter) {
+	if (typeof Swiper === 'undefined') return;
+	filter = filter || 'all';
+
+	const wrapper = document.querySelector('.gallery-slider .swiper-wrapper');
+	if (!wrapper) return;
+
+	if (galleryAllSlides.length === 0) {
+		wrapper.querySelectorAll('.swiper-slide').forEach(function(slide) {
+			galleryAllSlides.push(slide.cloneNode(true));
+		});
+	}
+
+	if (gallerySwiper) {
+		gallerySwiper.destroy(true, true);
+		gallerySwiper = null;
+	}
+
+	wrapper.innerHTML = '';
+
+	galleryAllSlides.forEach(function(slide) {
+		if (filter === 'all' || slide.dataset.category === filter) {
+			wrapper.appendChild(slide.cloneNode(true));
+		}
+	});
+
+	gallerySwiper = new Swiper('.gallery-slider', {
 		slidesPerView: 'auto',
 		spaceBetween: 16,
 		grabCursor: true,
@@ -234,6 +318,17 @@ function initGallery() {
 				spaceBetween: 20,
 			}
 		}
+	});
+}
+
+function initGalleryTabs() {
+	var tabs = document.querySelectorAll('.gallery-tab');
+	tabs.forEach(function(tab) {
+		tab.addEventListener('click', function() {
+			tabs.forEach(function(t) { t.classList.remove('active'); });
+			tab.classList.add('active');
+			initGallery(tab.dataset.filter);
+		});
 	});
 }
 
@@ -314,15 +409,16 @@ function initSmoothScroll() {
    ============================================= */
 
 function initPresentationModal() {
-	const btn = document.getElementById('openPresentation');
-	const btnMobile = document.getElementById('openPresentationMobile');
-	const modal = document.getElementById('presentationModal');
+	var btn = document.getElementById('openPresentation');
+	var btnMobile = document.getElementById('openPresentationMobile');
+	var btnHero = document.getElementById('heroPresentation');
+	var modal = document.getElementById('presentationModal');
 	if (!modal) return;
 
-	const closeBtn = modal.querySelector('.modal__close');
-	const backdrop = modal.querySelector('.modal__backdrop');
-	const mobileMenu = document.getElementById('mobileMenu');
-	const burger = document.getElementById('burger');
+	var closeBtn = modal.querySelector('.modal__close');
+	var backdrop = modal.querySelector('.modal__backdrop');
+	var mobileMenu = document.getElementById('mobileMenu');
+	var burger = document.getElementById('burger');
 
 	function closeMobileMenu() {
 		if (!mobileMenu) return;
@@ -333,22 +429,68 @@ function initPresentationModal() {
 	function open() {
 		closeMobileMenu();
 		modal.classList.add('active');
-		document.documentElement.classList.add('no-scroll');
-		document.body.classList.add('no-scroll');
 	}
 
 	function close() {
 		modal.classList.remove('active');
-		document.documentElement.classList.remove('no-scroll');
-		document.body.classList.remove('no-scroll');
 	}
 
 	if (btn) btn.addEventListener('click', open);
 	if (btnMobile) btnMobile.addEventListener('click', open);
+	if (btnHero) btnHero.addEventListener('click', open);
 	closeBtn.addEventListener('click', close);
 	backdrop.addEventListener('click', close);
 	document.addEventListener('keydown', (e) => {
 		if (e.key === 'Escape' && modal.classList.contains('active')) close();
+	});
+}
+
+/* =============================================
+   PHONE BUTTONS (desktop: copy to clipboard)
+   ============================================= */
+
+function initPhoneButtons() {
+	var PHONE_RAW = '+380773000999';
+	var PHONE_DISPLAY = '+38 077 300 0999';
+	var links = document.querySelectorAll('a[href^="tel:"]:not(.footer__phone)');
+
+	links.forEach(function(link) {
+		link.addEventListener('click', function(e) {
+			if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
+
+			e.preventDefault();
+
+			if (link.dataset.phoneActive) return;
+			link.dataset.phoneActive = '1';
+
+			var i18nKey = link.dataset.i18n;
+			var lang = document.documentElement.lang === 'uk' ? 'ua' : 'en';
+			var originalText = (translations[lang] && translations[lang][i18nKey]) || link.textContent;
+
+			link.textContent = PHONE_DISPLAY;
+
+			var tooltip = document.createElement('span');
+			tooltip.className = 'phone-tooltip';
+			tooltip.textContent = lang === 'ua' ? 'скопійовано' : 'copied';
+			link.appendChild(tooltip);
+
+			requestAnimationFrame(function() {
+				tooltip.classList.add('phone-tooltip--visible');
+			});
+
+			if (navigator.clipboard) {
+				navigator.clipboard.writeText(PHONE_RAW).catch(function() {});
+			}
+
+			setTimeout(function() {
+				tooltip.classList.remove('phone-tooltip--visible');
+			}, 2000);
+
+			setTimeout(function() {
+				link.textContent = originalText;
+				delete link.dataset.phoneActive;
+			}, 2500);
+		});
 	});
 }
 
