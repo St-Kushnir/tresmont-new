@@ -705,7 +705,7 @@ a.btn--cta[href^="tel"] {
 /* Stats */
 .stats {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	gap: 0;
 	border-top: 1px solid var(--color-border);
 	border-bottom: 1px solid var(--color-border);
@@ -1505,6 +1505,12 @@ a.btn--cta[href^="tel"] {
 	opacity: 1;
 	transform: translateY(0);
 	transition-delay: 0.3s;
+}
+
+.stats.visible .stat:nth-child(4) {
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.45s;
 }
 
 .partners .partners__item {
