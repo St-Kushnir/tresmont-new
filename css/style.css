@@ -690,6 +690,21 @@ a.btn--cta[href^="tel"] {
 	line-height: 1.75;
 }
 
+.about-text-block {
+	display: grid;
+	gap: 12px;
+}
+
+.about-text-block p {
+	margin: 0;
+}
+
+.about-text-block__final {
+	margin-top: 12px !important;
+	color: var(--color-text) !important;
+	font-weight: 400;
+}
+
 .about-grid__image {
 	position: relative;
 	overflow: hidden;
