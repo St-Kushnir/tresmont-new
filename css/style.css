@@ -765,7 +765,6 @@ a.btn--cta[href^="tel"] {
 .about-location {
 	text-align: center;
 	padding: clamp(48px, 6vw, 80px) 0;
-	border-top: 1px solid var(--color-border);
 	margin-bottom: clamp(48px, 6vw, 80px);
 }
 
