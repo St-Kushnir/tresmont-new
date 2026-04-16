@@ -1719,6 +1719,8 @@ a.btn--cta[href^="tel"] {
 
 	.about-grid__image img {
 		aspect-ratio: 16 / 10;
+		/* Show more bottom, crop more top on small screens */
+		object-position: 50% 85%;
 	}
 
 	.eco-grid {
